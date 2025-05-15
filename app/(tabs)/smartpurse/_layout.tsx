@@ -1,8 +1,21 @@
 import { Stack } from 'expo-router';
+import { useCallback } from 'react';
 
 export default function SmartPurseLayout() {
+  const screenOptions = useCallback(() => ({
+    headerStyle: {
+      backgroundColor: '#D6086B',
+    },
+    headerTintColor: '#fff',
+    headerBackTitleVisible: false,
+    gestureEnabled: true,
+  }), []);
+
   return (
-    <Stack>
+    <Stack
+      screenOptions={screenOptions}
+      initialRouteName="index"
+    >
       <Stack.Screen
         name="index"
         options={{
@@ -13,42 +26,32 @@ export default function SmartPurseLayout() {
         name="transactions"
         options={{
           title: 'Transactions',
-          headerStyle: {
-            backgroundColor: '#E6007E',
-          },
-          headerTintColor: '#fff',
         }}
       />
       <Stack.Screen
         name="goals"
         options={{
           title: 'Financial Goals',
-          headerStyle: {
-            backgroundColor: '#E6007E',
-          },
-          headerTintColor: '#fff',
         }}
       />
       <Stack.Screen
         name="budget"
         options={{
           title: 'Budget',
-          headerStyle: {
-            backgroundColor: '#E6007E',
-          },
-          headerTintColor: '#fff',
+        }}
+      />
+      <Stack.Screen
+        name="reports"
+        options={{
+          title: 'Reports',
         }}
       />
       <Stack.Screen
         name="insights"
         options={{
           title: 'Financial Insights',
-          headerStyle: {
-            backgroundColor: '#E6007E',
-          },
-          headerTintColor: '#fff',
         }}
       />
     </Stack>
   );
-} 
+}

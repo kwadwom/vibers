@@ -1,4 +1,4 @@
-import CreditScreen from '../../../smartpurse/screens/CreditScreen';
+import CreditScreen from '@/screens/CreditScreen';
 
 export default function Credit() {
   return <CreditScreen />;

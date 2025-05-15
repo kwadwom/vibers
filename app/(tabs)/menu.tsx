@@ -1,4 +1,4 @@
-import MenuScreen from '../../../smartpurse/screens/MenuScreen';
+import MenuScreen from '@/screens/MenuScreen';
 
 export default function Menu() {
   return <MenuScreen />;

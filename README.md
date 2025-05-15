@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# Welcome to your SmartPurse - Smart Financial Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+SmartPurse is a modern financial management application built with React Native and Expo, designed to help users track their expenses, set savings goals, and make informed financial decisions. The app provides real-time insights into spending patterns and offers smart budgeting features.
 
-1. Install dependencies
+## Features
 
+### SmartPurse
+- **Expense Tracking**: Monitor daily and monthly expenses with detailed categorization
+- **Income Management**: Track all income sources and view monthly trends
+- **Savings Goals**: Set and track progress towards financial goals
+- **Transaction History**: View detailed transaction history with search and filter capabilities
+
+### Reports & Analytics
+- **Daily Expense Analysis**: View spending patterns over the last 14 days
+- **Monthly Income Overview**: Track income trends over 6-month periods
+- **Category-wise Breakdown**: Understand spending patterns by category
+- **Financial Insights**: Get personalized insights based on spending behavior
+
+## Technical Stack
+
+- **Framework**: React Native with Expo
+- **Navigation**: Expo Router with file-based routing
+- **UI Components**: Custom components with React Native elements
+- **Charts**: react-native-chart-kit for data visualization
+- **State Management**: React hooks and context
+- **API Integration**: RESTful API integration with fetch
+
+## Development Setup
+
+1. **Prerequisites**:
+   ```bash
+   node >= 16.0.0
+   npm >= 8.0.0
+   ```
+
+2. **Installation**:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Run Development Server**:
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## Development Options
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+You can develop the app using:
+- [Expo Development Build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+vibers/
+├── app/                   # Main application code
+│   ├── (tabs)/           # Tab-based navigation
+│   │   ├── smartpurse/   # SmartPurse feature
+│   │   ├── credit/       # Credit management
+│   │   └── index.tsx     # Home screen
+├── components/           # Reusable components
+├── services/            # API and other services
+└── assets/              # Images and other static files
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
+Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Join the community
+## Resources
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
+- [Expo Router Documentation](https://expo.github.io/router/docs/)

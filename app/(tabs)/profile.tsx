@@ -1,4 +1,4 @@
-import ProfileScreen from '../../../smartpurse/screens/ProfileScreen';
+import ProfileScreen from '@/screens/ProfileScreen';
 
 export default function Profile() {
   return <ProfileScreen />;
